@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-weight: normal;
+    list-style: square;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Genos;
+    display:flex;
+    margin: 0px;
+    background-color: lavender;
+}
+#title-page{
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    background: url(images/title_bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 10%;
+    padding-top: 15%;
+    font-size: 70px;
+
+}
+#navbar{
+    display: flex;
+    width: 70%;
+    justify-self: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.nav-button{
+    font-family: ;
+    padding: 2%;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+#picture img {
+    width: 10px;
+}
