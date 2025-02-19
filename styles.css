@@ -10,17 +10,16 @@ body{
     font-family: Genos;
     display:flex;
     margin: 0px;
-    background-color: lavender;
+    padding-bottom: 0px;
+    background: url(images/title_bg.jpg) no-repeat center center fixed;
+    background-size: 100%;
 }
 #title-page{
     height: 100vh;
     width: 100%;
+    background: url(images/title_bg.jpg) no-repeat center center fixed;
     background-size: 100%;
-    background: url(images/title_bg.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    color:white;
     padding-left: 10%;
     padding-top: 15%;
     font-size: 70px;
@@ -32,19 +31,38 @@ body{
     justify-self: center;
     justify-content: space-evenly;
     position: sticky;
-    top: 0;
+    top: 1%;
     background-color: rgba(255,255,255,0.5);
     border-radius: 50px;
     margin-top: 15px;
 }
 .nav-button{
-    font-family: ;
     padding: 2%;
-    font-size: large;
+    font-size: larger;
+    font-weight: bold;
     text-decoration: none;
 }
 
 
 #picture img {
-    width: 10px;
+    width: 100%;
+
 }
+#picture{
+    width: 30%;
+}
+#info{
+    width: 60%;
+}
+#about {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+#about-navbar{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.
