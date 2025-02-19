@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     font-weight: normal;
     list-style: square;
@@ -23,39 +25,49 @@ body{
     padding-left: 10%;
     padding-top: 15%;
     font-size: 70px;
+    letter-spacing: 6px;
+    text-shadow: 5px 5px lightpink;
 
 }
 #navbar{
     display: flex;
-    width: 70%;
+    width: 40%;
     justify-self: center;
     justify-content: space-evenly;
     position: sticky;
     top: 1%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
     border-radius: 50px;
     margin-top: 15px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
 }
 .nav-button{
     padding: 2%;
     font-size: larger;
     font-weight: bold;
     text-decoration: none;
+    text-decoration-color: purple;
+    color: blueviolet;
 }
 
 
 #picture img {
-    width: 100%;
-
+    width: 80%;
+    border-radius: 170px;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 #picture{
     width: 30%;
+
 }
 #info{
     width: 60%;
 }
 #about {
-    background-color: white;
+    height: 100vh;
+    background-color: lightpink;
     display: flex;
     flex-direction: row;
 }
@@ -63,6 +75,73 @@ body{
     width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
+    align-self: flex-start;
 }
-.
+
+.about-button{
+    width: 33%;
+    padding: 0%;
+    background: none;
+    border: none;
+    font-family: "Genos";
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    transition: 0.2s;
+}
+.about-button::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s;
+}
+
+.about-button:hover,
+.about-button:focus {
+    color: white;
+}
+
+.about-button:hover::after,
+.about-button:focus::after {
+    background-color: purple;
+    width: 100%;
+}
+
+#education{
+    background-color: aqua;
+    border-radius: 50px;
+}
+#education h3,h4,h5{
+    margin: 0;
+}
+#experience{
+    background-color: burlywood;
+    border-radius: 20px;
+}
+#skills{
+    display: flex;
+    flex-direction: row;
+    background-color: darkorange;
+}
+#technical-skills{
+    width: 50%;
+}
+#interpersonal{
+    width: 50%;
+}
+.date{
+    text-align: right;
+    margin: 0px;
+}
+#experience a{
+    text-decoration-color: purple;
+    color: black;
+}
+#experience h3 {
+    display: inline;
+}
