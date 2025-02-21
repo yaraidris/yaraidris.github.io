@@ -1,5 +1,9 @@
 window.addEventListener("load", function (event) {
+    //Get Current Year for Footer
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
 
+    // Function to display home page letters
     let i = 0;
     let txt = 'Hello I am Yara!'; /* The text */
     let speed = 100; /* The speed/duration of the effect in milliseconds */
@@ -16,6 +20,7 @@ window.addEventListener("load", function (event) {
 
     typeWriter()
 
+    // function to display different content depending on button press
     let edu = document.getElementById("education");
     let exp = document.getElementById("experience");
     let skill = document.getElementById("skills");
