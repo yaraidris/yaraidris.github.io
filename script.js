@@ -5,8 +5,8 @@ window.addEventListener("load", function (event) {
 
     // Function to display home page letters
     let i = 0;
-    let txt = 'Hello I am Yara!'; /* The text */
-    let speed = 100; /* The speed/duration of the effect in milliseconds */
+    let txt = 'Hello I am Yara!';
+    let speed = 100;
 
     function typeWriter() {
         if (i < txt.length) {
@@ -48,5 +48,18 @@ window.addEventListener("load", function (event) {
         skill.style.display = "flex";
     })
 
+    const menu=document.querySelector('#mobilemenu')
+    const menulinks=document.querySelector('.navmenu')
+
+    // Mobile Nav
+    menu.addEventListener('click',function(event){
+        menu.classList.toggle('is-active')
+        menulinks.classList.toggle('active')
+    })
+
+    menulinks.addEventListener("click", function(event){
+        menu.classList.toggle('is-active')
+        menulinks.classList.toggle('active')
+    })
 })
 
