@@ -289,6 +289,10 @@ footer p{
     #info h1,p{
         text-align: center;
     }
+    #experience{
+        max-height: 60%;
+        overflow-y: scroll;
+    }
     .about-button{
         margin: 2%;
     }
