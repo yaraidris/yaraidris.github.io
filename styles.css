@@ -167,6 +167,8 @@ body{
     border-radius: 5px;
     margin-top: 15px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+    max-height: 50%;
+    overflow-y: scroll;
 }
 #skills{
     padding: 2%;
@@ -286,10 +288,6 @@ footer p{
     }
     #info h1,p{
         text-align: center;
-    }
-    #experience{
-        max-height: 60%;
-        overflow-y: scroll;
     }
     .about-button{
         margin: 2%;
