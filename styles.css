@@ -290,7 +290,7 @@ footer p{
         text-align: center;
     }
     #experience{
-        max-height: 60%;
+        max-height: 40%;
         overflow-y: scroll;
     }
     .about-button{
